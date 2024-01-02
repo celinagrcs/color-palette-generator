@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Color Palette Generator</title>
+    <link rel="shortcut icon" href="/img/icons8-rgb-círculo-2-color-96.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+    
+        <div class="color-box">
+            <div class="color" id="color">
+                <div id="color-code" class="color-code">#FFFFFF</div>
+            </div>
+            <div class="btn">
+                <button id="generate" class="generate-btn">Generate</button>
+                <button id="save" class="save-btn"><i class="bi bi-bookmark-plus">Save</i></button>
+            </div>
+        </div>
+        <div class="saved-colors">
+            <h2>Saved Colors</h2> 
+            <div id="saved-color-list"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #ffffff;
+    background-image: radial-gradient(#868383 1.2000000000000002px, #ffffff 1.2000000000000002px);
+    background-size: 24px 24px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    height: 100vh;
+    opacity: 1;
+}
+
+.color-box {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid black;
+    border-bottom: 4px solid black;
+    border-right: 3px solid black;
+}
+
+.color {
+    width: 500px;
+    height: 300px;
+    margin: 20px auto;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.color-code{
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.btn{
+    display: flex;
+    justify-content: space-around;
+}
+
+.generate-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.save-btn{
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    border: 1px solid black;
+}
+
+.saved-colors{
+    margin-top: 60px;
+    background: #f4f4f4;
+    width: 500px;
+    border: 2px solid black;
+    border-bottom: 4px solid black;
+    border-right: 3px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 15px;
+
+}
+
+button{
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 750px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .color-box{
+        width: 85%;
+        margin-top: 45px;
+    }
+    .color{
+        width: 80%;
+    }
+
+    .saved-colors{
+        width: 85%;
+        margin-bottom: 50px;
+    }
+}
